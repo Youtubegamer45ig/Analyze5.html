@@ -1,0 +1,250 @@
+<!--
+    File: analyze05.html
+    Updated by: [Isaiah Gibson]
+    Date: [5/29/24]
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze 05</title>
+    <link href="https://fonts.googleapis.com/css2?family=FontName1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=FontName2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Header Title</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="examples tablet-desktop">
+            <p class="btn">Paragraph 2</p>
+            <p class="btn">Paragraph 3</p>
+            <p class="btn">Paragraph 4</p>
+        </div>
+        <img class="corner" src="image.jpg" alt="Image">/* General styles */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Style rules for mobile viewport begin here */
+nav ul {
+    list-style-type: none;
+}
+nav li {
+    display: inline-block;
+}
+
+/* This style rule hides the tablet-desktop class */
+.tablet-desktop {
+    display: none;
+}
+
+.btn {
+    background-color: #375f1b;
+    padding: 2%;
+    margin: 2% auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn a {
+    color: #ebf7e3;
+    text-decoration: none;
+    font-size: 1.25em;
+    display: block;
+}
+
+.corner {
+    border-radius: 12px;
+}
+
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze 06</title>
+    <link rel="stylesheet" href="analyze/css/styles06.css">
+</head>
+<body>
+    <!-- Content of the page -->
+    <header>
+        <h1>Header Title</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="col-content">Content 1</div>
+        <div class="col-content">Content 2</div>
+        <div class="col-content">Content 3</div>
+    </main>
+    <footer>
+        <p>Updated by: [Isaiah Gibson]</p>
+    </footer>
+</body>
+</html>
+/*
+    File: styles06.css
+    Updated by: [Your Name]
+    Date: [Today's Date]
+*/
+
+body {
+    background: linear-gradient(to bottom, #e5e0fa, #29157e);
+    /* Other existing styles */
+}
+
+/* Existing styles */
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 600px) {
+    /* This style rule shows the tablet-desktop class */
+    .tablet-desktop {
+        display: block;
+    }
+    /* Other tablet styles */
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1024px) {
+    /* Style rule for the header element when displayed in a desktop viewport */
+    header {
+        width: 25%;
+        float: left;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav li a:hover {
+        color: #4424d6;
+        background-color: #e5e0fa;
+    }
+
+    .col-content {
+        width: 30%;
+        float: left;
+        padding: 1.5%;
+    }
+
+    /* Other desktop styles */
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1441px) {
+    #container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze 07</title>
+    <link rel="stylesheet" href="styles07.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="android-chrome-192x192" href="images/android-chrome-192x192.png">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Header Title</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <article class="grid">
+                    <h2>Article Title 1</h2>
+                    <p>Article content 1</p>
+                </article>
+                <article class="grid">
+                    <h2>Article Title 2</h2>
+                    <p>Article content 2</p>
+                </article>
+                <aside>
+                    <h3>Aside Title</h3>
+                    <p>Aside content</p>
+                </aside>
+            </section>
+        </main>
+        <footer>
+            <p>Updated by: [Isaiah Gibson]</p>
+        </footer>
+    </div>
+</body>
+</html>
+/*
+    File: styles07.css
+    Updated by: [Isaiah Gibson]
+    Date: [5/29/24]
+*/
+
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, 
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Specific styles */
+section {
+    background-color: #9d4502;
+    margin
+
+
